@@ -1,0 +1,49 @@
+{
+	"extends": "semistandard",
+	"env": {
+		"browser": true,
+		"mocha": true,
+		"node": true
+	},
+	"parserOptions": {
+		"ecmaFeatures": {
+			"arrowFunctions": true,
+			"blockBindings": true,
+			"classes": true,
+			"defaultParams": true,
+			"forOf": true,
+			"generators": true,
+			"modules": true,
+			"globalReturn": false,
+			"templateStrings": true,
+			"jsx": true
+		}
+	},
+	"globals": {
+		"__DEV__": true,
+		"__API_HOST__": true,
+		"__API_PROTOCOL__": true
+	},
+	"parser": "babel-eslint",
+	"plugins": [
+		"react"
+	],
+	"rules": {
+		"react/jsx-no-undef": 2,
+		"react/jsx-uses-vars": 2,
+		"react/jsx-uses-react": 2,
+		"react/no-direct-mutation-state": 2,
+		"react/no-did-mount-set-state": 1,
+		"react/no-did-update-set-state": 1,
+        "react/jsx-no-duplicate-props": 2,
+		"indent": [
+			2,
+			"tab",
+			{
+				"SwitchCase": 1
+			}
+		],
+		"arrow-parens": [2, "as-needed"],
+		"no-console": 2
+	}
+}
